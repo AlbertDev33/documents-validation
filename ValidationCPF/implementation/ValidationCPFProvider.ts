@@ -70,7 +70,7 @@ export class ValidationCPFProvider implements IValidationCPFProvider {
     }
   }
 
-  private firsNumberVerification(cleanedCpf: number, cpfArray: string[]) {
+  private firsNumberVerification(cleanedCpf: number, cpfArray: string[]): number {
     let len = cleanedCpf;
     let sum = 0;
     let div = 0;
