@@ -1,27 +1,28 @@
+import { ValidationError } from '@shared/error/validationError';
 import { IValidationCPFProvider } from '../protocol/IValidationCPFProvider';
 
 export interface ICleanedCpf {
   value: {
-    cpf: string;
+    cpf: number | string;
     isValid: boolean;
   };
 }
 
 export class ValidationCPFProvider implements IValidationCPFProvider {
-  public isValid(cpf: string): ICleanedCpf {
+  public isValid(cpf: number | string): ICleanedCpf {
     const parseString = String(cpf);
     const cleanedCpf = this.cleanMask(parseString);
 
     const cpfArray = cleanedCpf.split('');
 
     if (cleanedCpf === '' || cpfArray.length < 11) {
-      throw new Error('Não é um número válido!');
+      throw new ValidationError('Não é um número válido!');
     }
 
     const isSequencialNumbers = /^(\d)\1{3,11}$/;
 
     if (isSequencialNumbers.test(cleanedCpf)) {
-      throw new Error('Números sequências não é um CPF válido!');
+      throw new ValidationError('Números sequências não é um CPF válido!');
     }
 
     const firstNumberValidate = cpfArray.slice(-2)[0];
@@ -63,10 +64,10 @@ export class ValidationCPFProvider implements IValidationCPFProvider {
   ): void {
     if (restNumber === 0 || restNumber === 1) {
       if (numberToValidate !== 0) {
-        throw new Error('CPF Inválido');
+        throw new ValidationError('CPF Inválido!');
       }
     } else if (validationNumber !== numberToValidate) {
-      throw new Error('CPF Inválido');
+      throw new ValidationError('CPF Inválido!');
     }
   }
 
