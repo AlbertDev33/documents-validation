@@ -1,4 +1,3 @@
-import { ValidationError } from "@shared/error/validationError";
 import { ValidationCPFProvider } from "../ValidationCPF/implementation/ValidationCPFProvider";
 import { IValidationCPFProvider } from "../ValidationCPF/protocol/IValidationCPFProvider";
 
@@ -37,7 +36,7 @@ describe('Validation CPF', () => {
         expect(value.isValid).toBe(true);
     });
 
-    it("should throw with cpf less than 11", () => {
+    it("should throw with cpf less than 11 characters", () => {
         const { sut } = makeSut();
 
         const invalidCpf = '845.760.160-1';
@@ -61,7 +60,7 @@ describe('Validation CPF', () => {
         expect(() => sut.isValid(invalidCpf)).toThrow('Números sequências não é um CPF válido!');
     });
 
-    it("should throw with sequencial typeor number", () => {
+    it("should throw with sequencial typeof number", () => {
         const { sut } = makeSut();
 
         const invalidCpf = 11111111111;
