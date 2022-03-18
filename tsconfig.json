@@ -1,23 +1,28 @@
 {
   "compilerOptions": {
-    "target": "ES5",
+    "target": "ES2021",
     "module": "CommonJS",
     "rootDir": "./",
-    "baseUrl": "./src",
+    "outDir": "dist",
+    "baseUrl": "./",
     "downlevelIteration": true,
     "strict": true,
     "strictPropertyInitialization": false,
     "allowJs": true,
     "esModuleInterop": true,
-    "paths": {
-      "@modules/*": ["modules/*"],
-      "@config/*": ["config/*"],
-      "@shared/*": ["shared/*"]
-    },
     "resolveJsonModule": true,
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true,
     "skipLibCheck": true,
-    "forceConsistentCasingInFileNames": true
+    "forceConsistentCasingInFileNames": true,
+    "paths": {
+      "@src/*": [
+        "./src/*"
+      ]
     }
+  },
+  "include": [
+    "./__test__/**/*.ts",
+    "./src/**/*.ts"
+  ]
 }
