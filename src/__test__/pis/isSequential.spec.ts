@@ -1,11 +1,12 @@
 import { IsSequential } from '@src/pis/IsSequential';
+import { isSequential } from '@src/pis/constants/constants';
 
 interface ISutType {
   sut: IsSequential;
 }
 
 const stub = (): ISutType => {
-  const sut = new IsSequential();
+  const sut = isSequential;
 
   return {
     sut,

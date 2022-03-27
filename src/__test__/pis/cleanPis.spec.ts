@@ -1,11 +1,12 @@
 import { CleanPis } from '@src/pis/CleanPis';
+import { cleanPis } from '@src/pis/constants/constants';
 
 interface ISutType {
   sut: CleanPis;
 }
 
 const stub = (): ISutType => {
-  const sut = new CleanPis();
+  const sut = cleanPis;
 
   return {
     sut,

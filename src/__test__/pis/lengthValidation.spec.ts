@@ -1,11 +1,12 @@
 import { LengthValidation } from '@src/pis/LengthValidation';
+import { lengthValidation } from '@src/pis/constants/constants';
 
 interface ISutType {
   sut: LengthValidation;
 }
 
 const stub = (): ISutType => {
-  const sut = new LengthValidation();
+  const sut = lengthValidation;
 
   return {
     sut,

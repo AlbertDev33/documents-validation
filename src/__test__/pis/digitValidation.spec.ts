@@ -1,11 +1,12 @@
 import { DigitValidation } from '@src/pis/DigitValidation';
+import { digitValidation } from '@src/pis/constants/constants';
 
 interface ISutType {
   sut: DigitValidation;
 }
 
 const stub = (): ISutType => {
-  const sut = new DigitValidation();
+  const sut = digitValidation;
 
   return {
     sut,
