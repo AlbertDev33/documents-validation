@@ -1,4 +1,4 @@
-const EXPECTED_LENGTH = 11;
+import { EXPECTED_LENGTH } from './constants/constants';
 
 export class LengthValidation {
   public execute(pis: string): boolean {
