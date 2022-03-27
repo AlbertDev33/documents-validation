@@ -20,14 +20,14 @@ export const isValidCpf = (cpf: string | number): boolean => {
     SECOND_VERIFICATOR_LENGTH,
   );
 
-  if (
-    !!isSequentialValidation &&
-    !!isValidLength &&
-    !!isValidFirstDigit &&
-    !!isValidSecondDigit
-  ) {
-    return true;
-  }
+  const validationList = [
+    isSequentialValidation,
+    isValidLength,
+    isValidFirstDigit,
+    isValidSecondDigit,
+  ];
 
-  return false;
+  const isValid = validationList.every(value => value === true);
+
+  return isValid;
 };
