@@ -6,7 +6,6 @@
     "outDir": "dist",
     "baseUrl": "./",
     "downlevelIteration": true,
-    "strict": true,
     "strictPropertyInitialization": false,
     "allowJs": true,
     "esModuleInterop": true,
