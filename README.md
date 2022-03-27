@@ -1,3 +1,7 @@
-# Validador de CPF brasileiro
+# Validador de documentos brasileiros
 
-- Validador de CPF brasileiro apenas para teste.
+Pacote em contrução.
+
+- Validação de CPF;
+- Validação de PIS;
+- Validação de CNPJ (ainda em construção).
