@@ -12,7 +12,7 @@ export class DigitValidation {
     const digit = parsedPis[CALC_LENGTH];
 
     const sum = parsedPis.reduce((acc, num, index) => {
-      let accumulator = acc;
+      let accumulator: number = acc;
       if (index < CALC_LENGTH) {
         accumulator += Number(num) * this.MULTIPLE_FACTOR[index];
       }
