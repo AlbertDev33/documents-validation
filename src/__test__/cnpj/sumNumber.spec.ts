@@ -1,4 +1,4 @@
-import { SumNumbers } from '@src/cnpj/SumNumbers';
+import { SumNumbers } from '@src/cnpj/sumNumbers';
 
 type ISutType = {
   sut: SumNumbers;
