@@ -25,6 +25,7 @@
         "no-shadow": "off",
         "@typescript-eslint/no-shadow": "error",
         "class-methods-use-this": "off",
+        "lines-between-class-members":"off",
         "import/extensions": [
             "error",
             "ignorePackages",
