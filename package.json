@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "test": "jest --runInBand"
+    "test": "jest --runInBand --coverage"
   },
   "devDependencies": {
     "@types/jest": "^26.0.23",
