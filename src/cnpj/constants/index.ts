@@ -6,6 +6,12 @@ import { FirstAssert, SecondAssert } from '../interfaces/WeigthChoice';
 import { IsSequential } from '../isSequential';
 import { SumNumbers } from '../sumNumbers';
 
+export const cleanCNPJ = new CleanCnpj();
+export const assertLength = new AssertLength();
+export const isSequential = new IsSequential();
+export const sumNumbers = new SumNumbers();
+export const assertDigits = new AssertDigits();
+
 const CLEAN_INVALID_CHARACTER = /[^0-9]/;
 const FLAG = 'g';
 export const REPLACE_INVALID_CHARACTER = new RegExp(
@@ -39,9 +45,3 @@ export const weigthChoice = (digit: Digit): FirstAssert | SecondAssert => {
 
   return choice[digit] as FirstAssert | SecondAssert;
 };
-
-export const cleanCNPJ = new CleanCnpj();
-export const assertLength = new AssertLength();
-export const isSequential = new IsSequential();
-export const sumNumbers = new SumNumbers();
-export const assertDigits = new AssertDigits();

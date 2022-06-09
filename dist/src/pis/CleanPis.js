@@ -6,7 +6,8 @@ const FLAG = 'g';
 const REPLACE_INVALID_CHARACTER = new RegExp(CLEAN_INVALID_CHARACTER, FLAG);
 class CleanPis {
     execute(pis) {
-        return pis.replace(REPLACE_INVALID_CHARACTER, '');
+        const parseString = String(pis);
+        return parseString.replace(REPLACE_INVALID_CHARACTER, '');
     }
 }
 exports.CleanPis = CleanPis;

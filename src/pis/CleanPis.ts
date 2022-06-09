@@ -4,6 +4,7 @@ const REPLACE_INVALID_CHARACTER = new RegExp(CLEAN_INVALID_CHARACTER, FLAG);
 
 export class CleanPis {
   public execute(pis: string): string {
-    return pis.replace(REPLACE_INVALID_CHARACTER, '');
+    const parseString = String(pis);
+    return parseString.replace(REPLACE_INVALID_CHARACTER, '');
   }
 }

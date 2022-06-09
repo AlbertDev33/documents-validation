@@ -17,5 +17,5 @@ export declare const weigthChoice: (digit: Digit) => FirstAssert | SecondAssert;
 export declare const cleanCNPJ: CleanCnpj;
 export declare const assertLength: AssertLength;
 export declare const isSequential: IsSequential;
-export declare const sumNumbers: SumNumbers;
 export declare const assertDigits: AssertDigits;
+export declare const sumNumbers: SumNumbers;

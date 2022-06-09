@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.assertDigits = exports.sumNumbers = exports.isSequential = exports.assertLength = exports.cleanCNPJ = exports.weigthChoice = exports.verificationLength = exports.splitRest = exports.EXPECTED_LENGTH = exports.IS_SEQUENTIAL = exports.REPLACE_INVALID_CHARACTER = void 0;
+exports.sumNumbers = exports.assertDigits = exports.isSequential = exports.assertLength = exports.cleanCNPJ = exports.weigthChoice = exports.verificationLength = exports.splitRest = exports.EXPECTED_LENGTH = exports.IS_SEQUENTIAL = exports.REPLACE_INVALID_CHARACTER = void 0;
 const assertDigits_1 = require("../assertDigits");
 const assertLength_1 = require("../assertLength");
 const cleanCNPJ_1 = require("../cleanCNPJ");
@@ -36,6 +36,6 @@ exports.weigthChoice = weigthChoice;
 exports.cleanCNPJ = new cleanCNPJ_1.CleanCnpj();
 exports.assertLength = new assertLength_1.AssertLength();
 exports.isSequential = new isSequential_1.IsSequential();
-exports.sumNumbers = new sumNumbers_1.SumNumbers();
 exports.assertDigits = new assertDigits_1.AssertDigits();
+exports.sumNumbers = new sumNumbers_1.SumNumbers();
 //# sourceMappingURL=index.js.map
