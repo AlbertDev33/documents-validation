@@ -1,4 +1,4 @@
-import { AssertLength } from '@src/cnpj/AssertLength';
+import { AssertLength } from '@src/cnpj/assertLength';
 
 type ISutType = {
   sut: AssertLength;

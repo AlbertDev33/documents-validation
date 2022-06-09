@@ -1,7 +1,10 @@
+import { AssertDigits } from '../assertDigits';
+import { AssertLength } from '../assertLength';
 import { CleanCnpj } from '../cleanCNPJ';
 import { Digit } from '../interfaces/IParameters';
 import { FirstAssert, SecondAssert } from '../interfaces/WeigthChoice';
 import { IsSequential } from '../isSequential';
+import { SumNumbers } from '../sumNumbers';
 
 const CLEAN_INVALID_CHARACTER = /[^0-9]/;
 const FLAG = 'g';
@@ -38,4 +41,7 @@ export const weigthChoice = (digit: Digit): FirstAssert | SecondAssert => {
 };
 
 export const cleanCNPJ = new CleanCnpj();
+export const assertLength = new AssertLength();
 export const isSequential = new IsSequential();
+export const sumNumbers = new SumNumbers();
+export const assertDigits = new AssertDigits();
