@@ -1,4 +1,34 @@
 {
+  "name": "documents-validation",
+  "version": "1.0.0",
+  "description": "Brazilian documents validation",
+  "main": "dist/index.js",
+  "license": "MIT",
+  "repository": {
+    "type": "ssh",
+    "url": "https://github.com/AlbertDev33/documents-validation"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "keywords": [
+    "files",
+    "cpf",
+    "cnpj",
+    "pis",
+    "CPF",
+    "CNPJ",
+    "PIS",
+    "documentos"
+  ],
+  "author": {
+    "name": "Albert Rocha"
+  },
+  "files": [
+    "dist/",
+    "LICENSE",
+    "package.json"
+  ],
   "scripts": {
     "test": "jest --runInBand"
   },
@@ -21,5 +51,6 @@
     "ts-node": "^10.6.0",
     "ts-node-dev": "^1.1.6",
     "typescript": "^4.3.2"
-  }
+  },
+  "private": false
 }

@@ -1,5 +1,7 @@
 {
   "compilerOptions": {
+    "moduleResolution": "node",
+    "sourceMap": true,
     "target": "ES2021",
     "module": "CommonJS",
     "rootDir": "./",
@@ -13,6 +15,7 @@
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true,
     "skipLibCheck": true,
+    "declaration": true,
     "forceConsistentCasingInFileNames": true,
     "paths": {
       "@src/*": [
@@ -22,6 +25,10 @@
   },
   "include": [
     "./__test__/**/*.ts",
-    "./src/**/*.ts"
+    "src"
+  ],
+  "exclude": [
+    "node_modules/**/*",
+    ".vscode/**/*"
   ]
 }
