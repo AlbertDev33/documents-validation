@@ -24,7 +24,7 @@
     }
   },
   "include": [
-    "./__test__/**/*.ts",
+    "./__test__/**/*.spec.ts",
     "src"
   ],
   "exclude": [

@@ -1,10 +1,14 @@
-import {
-  assertDigits,
-  assertLength,
-  cleanCNPJ,
-  isSequential,
-  sumNumbers,
-} from './constants';
+import { AssertDigits } from './assertDigits';
+import { AssertLength } from './assertLength';
+import { CleanCnpj } from './cleanCNPJ';
+import { IsSequential } from './isSequential';
+import { SumNumbers } from './sumNumbers';
+
+const cleanCNPJ = new CleanCnpj();
+const assertLength = new AssertLength();
+const isSequential = new IsSequential();
+const sumNumbers = new SumNumbers();
+const assertDigits = new AssertDigits();
 
 export const isValidCNPJ = (cnpj: string) => {
   const cnpjCleaned = cleanCNPJ.execute(cnpj);
