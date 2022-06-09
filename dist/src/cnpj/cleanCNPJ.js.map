@@ -1,1 +1,1 @@
-{"version":3,"file":"cleanCNPJ.js","sourceRoot":"","sources":["../../../src/cnpj/cleanCNPJ.ts"],"names":[],"mappings":";;;AAAA,2CAAwD;AAExD,MAAa,SAAS;IACb,OAAO,CAAC,IAAY;QACzB,OAAO,IAAI,CAAC,OAAO,CAAC,qCAAyB,EAAE,EAAE,CAAC,CAAC;IACrD,CAAC;CACF;AAJD,8BAIC"}
+{"version":3,"file":"cleanCNPJ.js","sourceRoot":"","sources":["../../../src/cnpj/cleanCNPJ.ts"],"names":[],"mappings":";;;AAAA,2CAAwD;AAExD,MAAa,SAAS;IACb,OAAO,CAAC,IAAY;QACzB,MAAM,SAAS,GAAG,MAAM,CAAC,IAAI,CAAC,CAAC;QAC/B,OAAO,SAAS,CAAC,OAAO,CAAC,qCAAyB,EAAE,EAAE,CAAC,CAAC;IAC1D,CAAC;CACF;AALD,8BAKC"}

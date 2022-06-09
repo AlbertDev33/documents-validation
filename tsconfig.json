@@ -24,10 +24,10 @@
     }
   },
   "include": [
-    "./__test__/**/*.spec.ts",
     "src"
   ],
   "exclude": [
+    "./src/__test__/**/*.spec.ts",
     "node_modules/**/*",
     ".vscode/**/*"
   ]
