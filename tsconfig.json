@@ -6,7 +6,7 @@
     "module": "CommonJS",
     "rootDir": "./",
     "outDir": "dist",
-    "baseUrl": "./",
+    "baseUrl": "./src",
     "downlevelIteration": true,
     "strictPropertyInitialization": false,
     "allowJs": true,
@@ -24,7 +24,7 @@
     }
   },
   "include": [
-    "src"
+    "src/**/*"
   ],
   "exclude": [
     "./src/__test__/**/*.spec.ts",

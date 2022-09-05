@@ -1,8 +1,9 @@
 {
   "name": "documents-validation",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Brazilian documents validation",
   "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "license": "MIT",
   "repository": {
     "type": "ssh",
@@ -30,7 +31,8 @@
     "package.json"
   ],
   "scripts": {
-    "test": "jest --runInBand"
+    "test": "jest --runInBand",
+    "build": "tsc --declaration"
   },
   "devDependencies": {
     "@types/jest": "^26.0.23",
