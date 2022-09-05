@@ -1,8 +1,8 @@
 {
   "name": "documents-validation",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Brazilian documents validation",
-  "main": "dist/src/index.js",
+  "main": "dist/index.js",
   "types": "dist/src/index.d.ts",
   "license": "MIT",
   "repository": {
@@ -50,9 +50,12 @@
     "json-schema-to-ts": "^1.6.5",
     "prettier": "^2.5.1",
     "ts-jest": "^27.0.3",
+    "ts-loader": "^9.3.1",
     "ts-node": "^10.6.0",
     "ts-node-dev": "^1.1.6",
-    "typescript": "^4.3.2"
+    "typescript": "^4.3.2",
+    "webpack": "^5.74.0",
+    "webpack-cli": "^4.10.0"
   },
   "private": false
 }
