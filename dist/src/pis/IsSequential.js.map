@@ -1,0 +1,1 @@
+{"version":3,"file":"IsSequential.js","sourceRoot":"","sources":["../../../src/pis/IsSequential.ts"],"names":[],"mappings":";;;AAAA,MAAM,kBAAkB,GAAG,gBAAgB,CAAC;AAC5C,MAAM,aAAa,GAAG,IAAI,MAAM,CAAC,kBAAkB,CAAC,CAAC;AAErD,MAAa,YAAY;IAChB,OAAO,CAAC,GAAW;QACxB,OAAO,CAAC,aAAa,CAAC,IAAI,CAAC,GAAG,CAAC,CAAC;IAClC,CAAC;CACF;AAJD,oCAIC"}
