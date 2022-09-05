@@ -1,3 +1,3 @@
-export { isValidCpf } from './cpf/index';
-export { isValidPis } from './pis/index';
-export { isValidCNPJ } from './cnpj/index';
+export { isValidCpf } from './cpf';
+export { isValidPis } from './pis';
+export { isValidCNPJ } from './cnpj';
