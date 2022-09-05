@@ -2,8 +2,8 @@
   "name": "documents-validation",
   "version": "1.0.3",
   "description": "Brazilian documents validation",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "main": "dist/src/index.js",
+  "types": "dist/src/index.d.ts",
   "license": "MIT",
   "repository": {
     "type": "ssh",
