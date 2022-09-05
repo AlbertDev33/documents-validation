@@ -1,6 +1,6 @@
 {
   "name": "documents-validation",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Brazilian documents validation",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
